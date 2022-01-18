@@ -1,0 +1,315 @@
+:root {
+    --main-font: 'Nunito', sans-serif;
+    --font-size: 16px;
+    --min-color: #ffa500;
+    --second-color: #333;
+    --main-modal-color: rgba(247, 222, 30, 0.85);
+    --second-modal-color: rgba(34, 34, 34, 0.85);
+    --container-width: 1200px
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*****HEADER*****/
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--second-color);
+    position: relative;
+    z-index: 1001;
+}
+
+.container_header {
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.container_header .fa-bars {
+    display: none;
+}
+
+.container_header .logo {
+    font-size: 3rem;
+}
+
+.container_header a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container_header a span {
+    color: var(--min-color);
+}
+
+.container_header a:hover {
+    color: var(--min-color);
+}
+
+.container_header .navbar a {
+    margin-right: 15px;
+}
+
+.container_header .midium {
+    display: none;
+}
+
+.container_header .icons a {
+    margin-right: 10px;
+}
+
+.container_header .search {
+    width: 80%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    background-color: var(--second-color);
+    padding: 1.5rem;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.container_header .search.active {
+    opacity: 1;
+}
+
+.container_header .search input {
+    display: inline-block;
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.container_header .search .fa-search {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/*****login form container*****/
+
+.container_login {
+    min-height: 100vh;
+    position: fixed;
+    top: -120%;
+    left: 0;
+    right: 0;
+    /*opacity: 0;*/
+    background-color: var(--second-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+.container_login.active {
+    top: 0;
+}
+
+
+.container_login .fa-times {
+    position: absolute;
+    top: 10px;
+    left: 90%;
+    font-size: 3rem;
+}
+
+.container_login form {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 au;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.container_login form h3 {
+    font-size: 2rem;
+}
+
+.container_login form input {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+}
+
+.container_login form .btn {
+    background-color: var(--min-color);
+}
+
+.container_login form #remember {
+    text-align: start;
+    width: 10%;
+    border: 1px solid #ccc;
+    display: inline-block;
+}
+
+.container_login form label {
+    font-size: 1.5rem;
+}
+
+.container_login form p {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.container_login form p a {
+    font-size: 1rem;
+    color: var(--min-color);
+}
+
+/*****hero*****/
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.video-container {
+    width: 500px;
+}
+
+.video-container video{
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.hero .content h3{
+    text-align: center;
+    font-size: 4.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.hero .content p{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:.5rem 0;
+    text-align: center;
+}
+
+.hero .content .btn {
+    width: 30%;
+    display: block;
+    margin-top: 1rem;
+    background: var(--min-color);
+    color: #fff;
+    padding: .9rem 3rem;
+    border: .2rem solid var(--min-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.hero .content .btn:hover  {
+    background-color: transparent;
+    color: var(--min-color);
+}
+
+/*****madiaqueri*****/
+
+@media (max-width:900px) {
+    
+    .container_header .navbar {
+        display: flex; 
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 10vh;
+        left: -100%;
+        right: 0;
+        transition: all 0.5s ease;
+        background-color: var(--second-color);
+        z-index: 999;
+    }
+    .container_header .navbar a {
+        padding: 3rem;
+        border-bottom: 1px solid #cccc;
+    }
+
+    .container_header .navbar_active {
+        left: 0;
+    }
+
+    .container_header .logo {
+        display: none;
+    }
+
+    .container_header .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .hero .content h3 {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    .hero .content p {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    .hero .content .btn {
+        width: 50%;
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+}
