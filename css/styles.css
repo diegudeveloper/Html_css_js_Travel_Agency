@@ -32,6 +32,35 @@ img {
     height: auto;
 }
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background:var(--min-color);
+    color:#fff;
+    padding:.8rem 3rem;
+    border:.2rem solid var(--min-color);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.heading{
+    text-align: center;
+    padding:2.5rem 0
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:var(--min-color);
+    border-radius: .5rem;
+    padding: 1.5rem 1rem;
+}
+
+.heading span.space {
+    display: none;
+}
+
 /*****HEADER*****/
 
 header {
@@ -149,9 +178,10 @@ header {
 
 .container_login .fa-times {
     position: absolute;
-    top: 10px;
-    left: 90%;
+    top: 20px;
+    left: 85%;
     font-size: 3rem;
+    color: #fff;
 }
 
 .container_login form {
@@ -261,6 +291,359 @@ header {
     color: var(--min-color);
 }
 
+/*****book*****/
+
+.book {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+  
+.book .row .image{
+    flex:1 1 35rem;
+}
+  
+.book .row .image img{
+    width:100%;
+}
+  
+.book .row form{
+    flex:1 1 40rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+  
+.book .row form .inputBox{
+    padding:.5rem 0;
+}
+  
+.book .row form .inputBox input{
+    width:100%;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+}
+  
+.book .row form .inputBox h3{
+    font-size: 2rem;
+    padding:1rem 0;
+    color:#666;
+}
+
+.packages {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+  
+.packages .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+  
+.packages .box-container .box img{
+    height: 25rem;
+    width:100%;
+    object-fit: cover;
+}
+  
+.packages .box-container .box .content{
+    padding:2rem;
+}
+  
+.packages .box-container .box .content h3{
+    font-size:2rem;
+    color:#333;
+}
+  
+.packages .box-container .box .content h3 i{
+    color:var(--orange);
+}
+  
+.packages .box-container .box .content p{
+    font-size:1.7rem;
+    color:#666;
+    padding:1rem 0;
+}
+  
+.packages .box-container .box .content .stars i{
+    font-size:1.7rem;
+    color:var(--orange);
+}
+  
+.packages .box-container .box .content .price{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+}
+  
+.packages .box-container .box .content .price span{
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.services {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+  
+.services .box-container .box{
+    flex: 1 1 40rem;
+    border-radius: .5rem;
+    padding:1rem;
+    text-align: center;
+}
+  
+.services .box-container .box i{
+    padding:1rem;
+    font-size: 5rem;
+    color:var(--orange);
+}
+  
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+  
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:1rem 0;
+}
+  
+.services .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+  
+.gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border:1rem solid #fff;
+    border-radius: .5rem;
+    flex:1 1 25rem;
+    height: 25rem;
+    position: relative;
+}
+
+ 
+.gallery .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+  
+.gallery .box-container .box .content{
+    position: absolute;
+    top:-100%; left:0;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    background:rgba(0,0,0,.7);
+    padding:2rem;
+    padding-top: 1rem;
+    transition: all 0.5s ease;
+}
+  
+.gallery .box-container .box:hover .content{
+    top:0;
+}
+  
+.gallery .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--min-color);
+}
+  
+.gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color:#eee;
+    padding: 0;
+}
+
+.review {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.review .review-slider{
+    padding-bottom: 2rem; 
+}
+
+.review .review-slider .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .review-slider .swiper-wrapper .swiper-slide {
+    width: 23%;
+    margin: 0 10px;
+}
+  
+.review .box{
+    padding:2rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+  
+.review .box img{
+    height:13rem;
+    width:13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+  
+.review .box h3{
+    color:#333;
+    font-size: 2.5rem;
+}
+  
+.review .box p{
+    color:#666;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+  
+.review .box .stars i{
+    color:var(--orange);
+    font-size: 1.7rem;
+}
+  
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+.contact {
+    width: 80%;
+    margin: 0 auto;
+}
+  
+.contact .row .image{
+    flex:1 1 35rem;
+}
+  
+.contact .row .image img{
+    width:100%;
+}
+  
+.contact .row form{
+    flex:1 1 50rem;
+    padding:2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+  
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.contact .row form .inputBox input, .contact .row form textarea{
+    width:49%;
+    margin:1rem 0;
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+}
+  
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+    width:100%;
+}
+  
+.brand-container{
+    text-align: center;
+    height: 10vh;
+    margin-top: 6rem;
+}
+
+.brand-container .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*****footer*****/
+
+.footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 24px;
+    margin: 0 10px;
+}
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border:  0;
+    margin: 20px 0;
+}
+.footer p {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*****madiaqueri*****/
 
 @media (max-width:900px) {
@@ -312,4 +695,15 @@ header {
         font-size: 1.5rem;
         margin-top: 15px;
     }
+
+    .review .review-slider .swiper-wrapper .swiper-slide {
+        width: 909%;
+        margin: 10px auto;
+    }
+
+    .heading span {
+        font-size: 2.5rem;
+    }
+
+   
 }
