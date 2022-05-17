@@ -1,7 +1,7 @@
 # Proyecto Travel Agency
 
 <details>
-    <summary>🖥 Desktop Image</summary>
+    <summary>🖥 Imagen Modo Pc</summary>
 
 ![diegudeveloper github io_Html_css_js_Travel_Agency_ (1)](https://user-images.githubusercontent.com/62949966/168805087-ec30339a-4c6b-4dbc-a6ba-3d3f9df71ab6.png)
 
