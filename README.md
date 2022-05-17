@@ -3,7 +3,7 @@
 <details>
     <summary>🖥 Desktop Image</summary>
 
-![diegudeveloper github io_Html_css_js_Travel_Agency_](https://user-images.githubusercontent.com/62949966/168313651-511bf86e-7d27-40b4-bf4a-14560dd64cb9.png)
+![diegudeveloper github io_Html_css_js_Travel_Agency_ (1)](https://user-images.githubusercontent.com/62949966/168805087-ec30339a-4c6b-4dbc-a6ba-3d3f9df71ab6.png)
 
 </details>
 
