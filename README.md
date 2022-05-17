@@ -32,7 +32,7 @@ Este proyecto se basa principalmente en su maquetación, se usó en primera inst
 
 </details>
 
-## Bienvenido! 👋
+## Welcome! 👋
 
 
 [Travel Agency](https://diegudeveloper.github.io/Html_css_js_Travel_Agency/) t is my first project with a more professional level, it is the result of my skills acquired in the different courses taken in different online platforms, that with the passage of time between readings, exercises and practice I am strengthening my skills and knowledge. 
