@@ -10,7 +10,7 @@
 </details>
 
 <details>
-    <summary>🖥 Imagen Modo Movil</summary>
+    <summary>📱 Imagen Modo Movil</summary>
 
 ![diegudeveloper github io_Html_css_js_Travel_Agency_ (1)](https://user-images.githubusercontent.com/62949966/169262658-7d346bf3-99bb-4c27-b25e-0156ec019325.png)
 
@@ -40,7 +40,7 @@ Este proyecto se basa principalmente en su maquetación, se usó en primera inst
 </details>
 
 <details>
-    <summary>🖥 Mobile Mode Image</summary>
+    <summary>📱 Mobile Mode Image</summary>
 
 ![diegudeveloper github io_Html_css_js_Travel_Agency_ (1)](https://user-images.githubusercontent.com/62949966/169262658-7d346bf3-99bb-4c27-b25e-0156ec019325.png)
 
